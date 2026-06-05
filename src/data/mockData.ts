@@ -21,7 +21,7 @@ Every photograph carries an emotion, every video tells a story, and every edit c
 My goal is to deliver every project with a cinematic touch, creative vision, and professional quality.
 
 I believe that the most beautiful stories are not told through words alone, but through great cinematography. It's not just about high-end cameras; it's about storytelling through light, shadow, and composition. We focus on every pixel to ensure your story resonates with the audience.`,
-  // shortBio: `An award-winning photographer with 4+ years of experience, specializing in capturing authentic moments between couples and families. Featured in Vogue, Harper's Bazaar & National Geographic.`,
+  shortBio: `An award-winning photographer with 4+ years of experience, specializing in capturing authentic moments between couples and families. Featured in Vogue, Harper's Bazaar & National Geographic.`,
   specializations: [
     "Street Photography",
     "Portrait Photography",
