@@ -10,10 +10,7 @@ export function CTASection() {
   const { ref, isInView } = useInView(0.2);
 
   return (
-    <section
-      ref={ref}
-      className="relative py-24 md:py-32 overflow-hidden"
-    >
+    <section ref={ref} className="relative py-24 md:py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--obsidian)] via-[var(--charcoal)] to-[var(--obsidian)]" />
 
@@ -22,7 +19,8 @@ export function CTASection() {
         <motion.div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full"
           style={{
-            background: "radial-gradient(circle, rgba(201,169,98,0.1) 0%, transparent 70%)",
+            background:
+              "radial-gradient(circle, rgba(201,169,98,0.1) 0%, transparent 70%)",
           }}
           animate={{
             scale: [1, 1.2, 1],
@@ -53,9 +51,9 @@ export function CTASection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          Ready to Tell Your
+          Let's Create
           <br />
-          <span className="text-gradient">Story Through Light?</span>
+          <span className="text-gradient">Together.</span>
         </motion.h2>
 
         {/* Subtitle */}
@@ -65,8 +63,9 @@ export function CTASection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Let&apos;s create something extraordinary together. Book a consultation
-          and begin your journey towards capturing timeless moments.
+          Let&apos;s Ready to tell your story? Book a consultation and discuss
+          your vision, timeline, and budget. Every great project starts with a
+          conversation.
         </motion.p>
 
         {/* Buttons */}
@@ -78,13 +77,13 @@ export function CTASection() {
         >
           <GlowButton>
             <Link href="/contact" className="flex items-center gap-2">
-              Book a Session
+              Book a Shoot
               <ArrowRight className="w-4 h-4" />
             </Link>
           </GlowButton>
-          <Button variant="outline">
+          {/* <Button variant="outline">
             <Link href="/portfolio">Explore Portfolio</Link>
-          </Button>
+          </Button> */}
         </motion.div>
 
         {/* Decorative elements */}

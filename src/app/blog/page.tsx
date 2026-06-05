@@ -12,7 +12,13 @@ import { Button } from "@/components/ui/Button";
 import { blogPosts } from "@/data/mockData";
 import { useLenis } from "@/hooks";
 
-const blogCategories = ["All", "Wedding Photography", "Techniques", "Wildlife", "Business"];
+const blogCategories = [
+  "All",
+  "Street Photography",
+  "Techniques",
+  "Wildlife",
+  "Business",
+];
 
 export default function BlogPage() {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
@@ -166,16 +172,21 @@ export default function BlogPage() {
                       {featuredPost.title}
                     </h2>
 
-                    <p className="text-[var(--muted)] mb-6">{featuredPost.excerpt}</p>
+                    <p className="text-[var(--muted)] mb-6">
+                      {featuredPost.excerpt}
+                    </p>
 
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-[var(--muted)] flex items-center gap-1">
                         <Calendar className="w-3 h-3" />
-                        {new Date(featuredPost.date).toLocaleDateString("en-US", {
-                          month: "long",
-                          day: "numeric",
-                          year: "numeric",
-                        })}
+                        {new Date(featuredPost.date).toLocaleDateString(
+                          "en-US",
+                          {
+                            month: "long",
+                            day: "numeric",
+                            year: "numeric",
+                          },
+                        )}
                       </span>
 
                       <Link
@@ -202,7 +213,9 @@ export default function BlogPage() {
           <div className="container mx-auto px-6">
             {filteredPosts.length === 0 ? (
               <div className="text-center py-12">
-                <p className="text-[var(--muted)]">No articles found matching your criteria.</p>
+                <p className="text-[var(--muted)]">
+                  No articles found matching your criteria.
+                </p>
               </div>
             ) : (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -293,8 +306,9 @@ export default function BlogPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Subscribe to receive the latest photography tips, behind-the-scenes
-              stories, and exclusive offers directly in your inbox.
+              Subscribe to receive the latest photography tips,
+              behind-the-scenes stories, and exclusive offers directly in your
+              inbox.
             </motion.p>
             <motion.form
               className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"

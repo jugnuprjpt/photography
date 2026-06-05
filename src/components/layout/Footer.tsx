@@ -16,16 +16,16 @@ const footerLinks = {
     { href: "/contact", label: "Contact" },
   ],
   services: [
-    { href: "/services#wedding", label: "Wedding Photography" },
-    { href: "/services#portrait", label: "Portrait Photography" },
-    { href: "/services#fashion", label: "Fashion Photography" },
-    { href: "/services#travel", label: "Travel Photography" },
-    { href: "/services#wildlife", label: "Wildlife Photography" },
+    { href: "/services#wedding", label: "Photography" },
+    { href: "/services#portrait", label: "Videography" },
+    { href: "/services#fashion", label: "Editing" },
+    // { href: "/services#travel", label: "Travel Photography" },
+    // { href: "/services#wildlife", label: "Wildlife Photography" },
   ],
   social: [
     { href: "https://instagram.com", label: "Instagram" },
-    { href: "https://twitter.com", label: "Twitter" },
-    { href: "https://linkedin.com", label: "LinkedIn" },
+    { href: "https://www.youtube.com/", label: "You tube" },
+    // { href: "https://linkedin.com", label: "LinkedIn" },
   ],
 };
 
@@ -110,13 +110,14 @@ export function Footer() {
 
           {/* Newsletter column */}
           <div>
-            <h4 className="text-sm font-medium uppercase tracking-wider mb-6">
+            {/* <h4 className="text-sm font-medium uppercase tracking-wider mb-6">
               Stay Updated
             </h4>
             <p className="text-sm text-[var(--muted)] mb-4">
-              Subscribe to receive the latest updates, tips, and exclusive offers.
-            </p>
-            <form className="space-y-3">
+              Subscribe to receive the latest updates, tips, and exclusive
+              offers.
+            </p> */}
+            {/* <form className="space-y-3">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -130,7 +131,7 @@ export function Footer() {
               >
                 Subscribe
               </motion.button>
-            </form>
+            </form> */}
 
             {/* Social links */}
             <div className="flex gap-4 mt-6">
@@ -158,10 +159,16 @@ export function Footer() {
           </p>
 
           <div className="flex gap-6 text-xs text-[var(--muted)]">
-            <Link href="/privacy" className="hover:text-[var(--gold)] transition-colors">
+            <Link
+              href="/privacy"
+              className="hover:text-[var(--gold)] transition-colors"
+            >
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-[var(--gold)] transition-colors">
+            <Link
+              href="/terms"
+              className="hover:text-[var(--gold)] transition-colors"
+            >
               Terms of Service
             </Link>
           </div>

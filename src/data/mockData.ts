@@ -12,12 +12,18 @@ import {
 } from "@/types";
 
 export const photographer: Photographer = {
-  name: "Arjun Photography",
-  tagline: "Capturing Stories Through Light",
-  bio: `With over 8 years of professional photography experience, Arjun has established himself as one of the most sought-after photographers in the industry. His unique ability to capture authentic moments and transform them into timeless art has earned him recognition from clients worldwide. From intimate weddings to high-fashion editorials, Arjun brings a cinematic vision to every project he undertakes. His work has been featured in prestigious publications including Vogue, Harper's Bazaar, National Geographic, and numerous international art galleries. Each photograph tells a story - a philosophy that has guided his artistic journey from the very beginning.`,
-  shortBio: `An award-winning photographer with 8+ years of experience, specializing in capturing authentic moments between couples and families. Featured in Vogue, Harper's Bazaar & National Geographic.`,
+  name: "Shivam Photography",
+  tagline: "Professional Photography, Cinematic Videography & Editing",
+  bio: `I am Shivam Sathwara, a Photographer, Videographer, and Editor. For me, a camera is not just a tool; it is a way to bring emotions, memories, and stories to life.
+
+Every photograph carries an emotion, every video tells a story, and every edit creates a new identity. I don't just capture moments; I present them in a way that allows people to relive those emotions even years later.
+
+My goal is to deliver every project with a cinematic touch, creative vision, and professional quality.
+
+I believe that the most beautiful stories are not told through words alone, but through great cinematography. It's not just about high-end cameras; it's about storytelling through light, shadow, and composition. We focus on every pixel to ensure your story resonates with the audience.`,
+  // shortBio: `An award-winning photographer with 4+ years of experience, specializing in capturing authentic moments between couples and families. Featured in Vogue, Harper's Bazaar & National Geographic.`,
   specializations: [
-    "Wedding Photography",
+    "Street Photography",
     "Portrait Photography",
     "Fashion Photography",
     "Travel Photography",
@@ -27,14 +33,30 @@ export const photographer: Photographer = {
   projectsCompleted: 500,
   happyClients: 350,
   awardsWon: 15,
-  location: "Mumbai, India",
-  email: "hello@arjunphotography.com",
-  phone: "+91 98765 43210",
+  location: "Ahemadabad, India",
+  email: "shivamsathwara50@gmail.com",
+  phone: "+91 7623848662",
   socialLinks: [
-    { platform: "Instagram", url: "https://instagram.com/arjunphotography", icon: "instagram" },
-    { platform: "Twitter", url: "https://twitter.com/arjunphotos", icon: "twitter" },
-    { platform: "LinkedIn", url: "https://linkedin.com/in/arjunphotography", icon: "linkedin" },
-    { platform: "Pinterest", url: "https://pinterest.com/arjunphotography", icon: "pinterest" },
+    {
+      platform: "Instagram",
+      url: "https://instagram.com/arjunphotography",
+      icon: "instagram",
+    },
+    {
+      platform: "Twitter",
+      url: "https://twitter.com/arjunphotos",
+      icon: "twitter",
+    },
+    {
+      platform: "LinkedIn",
+      url: "https://linkedin.com/in/arjunphotography",
+      icon: "linkedin",
+    },
+    {
+      platform: "Pinterest",
+      url: "https://pinterest.com/arjunphotography",
+      icon: "pinterest",
+    },
   ],
 };
 
@@ -43,8 +65,10 @@ export const projects: Project[] = [
     id: "1",
     title: "The Royal Wedding",
     category: "Wedding",
-    description: "A grand destination wedding at the iconic Udaipur Palace, capturing the essence of royal Indian heritage blended with modern elegance.",
-    image: "https://images.pexels.com/photos/1739090/pexels-photo-1739090.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    description:
+      "A grand destination wedding at the iconic Udaipur Palace, capturing the essence of royal Indian heritage blended with modern elegance.",
+    image:
+      "https://images.pexels.com/photos/1739090/pexels-photo-1739090.jpeg?auto=compress&cs=tinysrgb&w=1200",
     images: [
       "https://images.pexels.com/photos/1739090/pexels-photo-1739090.jpeg?auto=compress&cs=tinysrgb&w=1200",
       "https://images.pexels.com/photos/1739091/pexels-photo-1739091.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -60,8 +84,10 @@ export const projects: Project[] = [
     id: "2",
     title: "Ethereal Fashion",
     category: "Fashion",
-    description: "Editorial shoot for a leading fashion magazine, exploring the intersection of traditional Indian textiles with contemporary fashion.",
-    image: "https://images.pexels.com/photos/1536617/pexels-photo-1536617.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    description:
+      "Editorial shoot for a leading fashion magazine, exploring the intersection of traditional Indian textiles with contemporary fashion.",
+    image:
+      "https://images.pexels.com/photos/1536617/pexels-photo-1536617.jpeg?auto=compress&cs=tinysrgb&w=1200",
     images: [
       "https://images.pexels.com/photos/1536617/pexels-photo-1536617.jpeg?auto=compress&cs=tinysrgb&w=1200",
       "https://images.pexels.com/photos/1536618/pexels-photo-1536618.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -76,8 +102,10 @@ export const projects: Project[] = [
     id: "3",
     title: "Wild Symphony",
     category: "Wildlife",
-    description: "A month-long expedition documenting the majestic wildlife of Ranthambore, capturing rare moments of Bengal tigers in their natural habitat.",
-    image: "https://images.pexels.com/photos/162240/tiger-nature-wild-cat-162240.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    description:
+      "A month-long expedition documenting the majestic wildlife of Ranthambore, capturing rare moments of Bengal tigers in their natural habitat.",
+    image:
+      "https://images.pexels.com/photos/162240/tiger-nature-wild-cat-162240.jpeg?auto=compress&cs=tinysrgb&w=1200",
     images: [
       "https://images.pexels.com/photos/162240/tiger-nature-wild-cat-162240.jpeg?auto=compress&cs=tinysrgb&w=1200",
       "https://images.pexels.com/photos/162241/tiger-nature-wild-cat-162241.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -92,8 +120,10 @@ export const projects: Project[] = [
     id: "4",
     title: "Portraits of Silence",
     category: "Portrait",
-    description: "Intimate portrait series capturing the essence of monks in Ladakh, exploring themes of spirituality and inner peace.",
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    description:
+      "Intimate portrait series capturing the essence of monks in Ladakh, exploring themes of spirituality and inner peace.",
+    image:
+      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1200",
     images: [
       "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1200",
     ],
@@ -107,8 +137,10 @@ export const projects: Project[] = [
     id: "5",
     title: "Wanderlust Diaries",
     category: "Travel",
-    description: "Visual journey through the hidden valleys of Northeast India, documenting untouched landscapes and indigenous cultures.",
-    image: "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    description:
+      "Visual journey through the hidden valleys of Northeast India, documenting untouched landscapes and indigenous cultures.",
+    image:
+      "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1200",
     images: [
       "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1200",
     ],
@@ -122,8 +154,10 @@ export const projects: Project[] = [
     id: "6",
     title: "Coastal Dreams",
     category: "Travel",
-    description: "Cinematic exploration of Kerala's backwaters and coastal life, showcasing the serene beauty of India's southern coastline.",
-    image: "https://images.pexels.com/photos/1287462/pexels-photo-1287462.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    description:
+      "Cinematic exploration of Kerala's backwaters and coastal life, showcasing the serene beauty of India's southern coastline.",
+    image:
+      "https://images.pexels.com/photos/1287462/pexels-photo-1287462.jpeg?auto=compress&cs=tinysrgb&w=1200",
     images: [
       "https://images.pexels.com/photos/1287462/pexels-photo-1287462.jpeg?auto=compress&cs=tinysrgb&w=1200",
     ],
@@ -137,8 +171,10 @@ export const projects: Project[] = [
     id: "7",
     title: "Mumbai Nights",
     category: "Portrait",
-    description: "Street portrait series capturing the vibrant nightlife and diverse characters of Mumbai's bustling streets.",
-    image: "https://images.pexels.com/photos/3586967/pexels-photo-3586967.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    description:
+      "Street portrait series capturing the vibrant nightlife and diverse characters of Mumbai's bustling streets.",
+    image:
+      "https://images.pexels.com/photos/3586967/pexels-photo-3586967.jpeg?auto=compress&cs=tinysrgb&w=1200",
     images: [
       "https://images.pexels.com/photos/3586967/pexels-photo-3586967.jpeg?auto=compress&cs=tinysrgb&w=1200",
     ],
@@ -152,8 +188,10 @@ export const projects: Project[] = [
     id: "8",
     title: "Bridal Elegance",
     category: "Wedding",
-    description: "Bridal portraiture showcasing exquisite traditional and contemporary bridal fashion from across India.",
-    image: "https://images.pexels.com/photos/3014858/pexels-photo-3014858.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    description:
+      "Bridal portraiture showcasing exquisite traditional and contemporary bridal fashion from across India.",
+    image:
+      "https://images.pexels.com/photos/3014858/pexels-photo-3014858.jpeg?auto=compress&cs=tinysrgb&w=1200",
     images: [
       "https://images.pexels.com/photos/3014858/pexels-photo-3014858.jpeg?auto=compress&cs=tinysrgb&w=1200",
     ],
@@ -171,10 +209,12 @@ export const testimonials: Testimonial[] = [
     name: "Priya Sharma",
     role: "Bride",
     company: "The Sharma Family",
-    image: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=200",
-    quote: "Arjun captured our wedding day perfectly. Every photo tells a story, and we couldn't be happier with the results. His ability to make everyone feel comfortable while capturing candid moments is truly exceptional. The photos are more than we ever imagined.",
+    image:
+      "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=200",
+    quote:
+      "Shivam captured our wedding day perfectly. Every photo tells a story, and we couldn't be happier with the results. His ability to make everyone feel comfortable while capturing candid moments is truly exceptional. The photos are more than we ever imagined.",
     rating: 5,
-    projectType: "Wedding Photography",
+    projectType: "Street Photography",
     date: "2024-02-10",
   },
   {
@@ -182,8 +222,10 @@ export const testimonials: Testimonial[] = [
     name: "Rahul Mehta",
     role: "Creative Director",
     company: "Vogue India",
-    image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200",
-    quote: "Working with Arjun is always a pleasure. His creative vision and technical expertise make him stand out. He understands the editorial context perfectly and delivers beyond expectations every single time.",
+    image:
+      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200",
+    quote:
+      "Working with Shivam is always a pleasure. His creative vision and technical expertise make him stand out. He understands the editorial context perfectly and delivers beyond expectations every single time.",
     rating: 5,
     projectType: "Fashion Editorial",
     date: "2024-01-25",
@@ -193,8 +235,10 @@ export const testimonials: Testimonial[] = [
     name: "Anjali Patel",
     role: "Marketing Director",
     company: "Taj Hotels",
-    image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200",
-    quote: "Arjun's photography perfectly captured the essence of our luxury properties. His attention to detail and understanding of brand aesthetics is remarkable. The campaign results exceeded our expectations.",
+    image:
+      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200",
+    quote:
+      "Shivam's photography perfectly captured the essence of our luxury properties. His attention to detail and understanding of brand aesthetics is remarkable. The campaign results exceeded our expectations.",
     rating: 5,
     projectType: "Brand Photography",
     date: "2023-12-15",
@@ -204,8 +248,10 @@ export const testimonials: Testimonial[] = [
     name: "Vikram Singh",
     role: "Publisher",
     company: "Lonely Planet India",
-    image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200",
-    quote: "Arjun's travel photography brings destinations to life. His images don't just show places; they tell compelling stories that inspire readers to explore. A true artist behind the lens.",
+    image:
+      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200",
+    quote:
+      "Shivam's travel photography brings destinations to life. His images don't just show places; they tell compelling stories that inspire readers to explore. A true artist behind the lens.",
     rating: 5,
     projectType: "Travel Photography",
     date: "2023-08-20",
@@ -215,8 +261,9 @@ export const testimonials: Testimonial[] = [
 export const services: Service[] = [
   {
     id: "1",
-    title: "Wedding Photography",
-    description: "Comprehensive wedding coverage from pre-wedding shoots to the main ceremony. Includes candid moments, traditional poses, and cinematic storytelling.",
+    title: "Street Photography",
+    description:
+      "Comprehensive wedding coverage from pre-wedding shoots to the main ceremony. Includes candid moments, traditional poses, and cinematic storytelling.",
     features: [
       "Pre-wedding shoot",
       "Full day coverage (10+ hours)",
@@ -229,13 +276,15 @@ export const services: Service[] = [
     ],
     price: 150000,
     duration: "Full Day",
-    image: "https://images.pexels.com/photos/1739090/pexels-photo-1739090.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image:
+      "https://images.pexels.com/photos/1739090/pexels-photo-1739090.jpeg?auto=compress&cs=tinysrgb&w=1200",
     popular: true,
   },
   {
     id: "2",
     title: "Portrait Photography",
-    description: "Professional portrait sessions for individuals, families, or corporate needs. Studio and outdoor options available.",
+    description:
+      "Professional portrait sessions for individuals, families, or corporate needs. Studio and outdoor options available.",
     features: [
       "2-hour session",
       "Multiple outfit changes",
@@ -247,12 +296,14 @@ export const services: Service[] = [
     ],
     price: 30000,
     duration: "2 Hours",
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image:
+      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     id: "3",
     title: "Fashion & Editorial",
-    description: "High-end fashion photography for designers, magazines, and brands. Full creative direction and production support.",
+    description:
+      "High-end fashion photography for designers, magazines, and brands. Full creative direction and production support.",
     features: [
       "Full day session",
       "Studio + Location",
@@ -265,13 +316,15 @@ export const services: Service[] = [
     ],
     price: 100000,
     duration: "Full Day",
-    image: "https://images.pexels.com/photos/1536617/pexels-photo-1536617.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image:
+      "https://images.pexels.com/photos/1536617/pexels-photo-1536617.jpeg?auto=compress&cs=tinysrgb&w=1200",
     popular: true,
   },
   {
     id: "4",
     title: "Travel & Lifestyle",
-    description: "On-location photography for travel brands, hotels, resorts, and lifestyle publications. Immersive storytelling approach.",
+    description:
+      "On-location photography for travel brands, hotels, resorts, and lifestyle publications. Immersive storytelling approach.",
     features: [
       "Custom duration",
       "Location anywhere",
@@ -283,12 +336,14 @@ export const services: Service[] = [
     ],
     price: 80000,
     duration: "Custom",
-    image: "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image:
+      "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     id: "5",
     title: "Wildlife & Nature",
-    description: "Expert wildlife photography for conservation projects, publications, and fine art prints. Involves expedition planning.",
+    description:
+      "Expert wildlife photography for conservation projects, publications, and fine art prints. Involves expedition planning.",
     features: [
       "Custom expedition",
       "Week-long coverage",
@@ -300,7 +355,8 @@ export const services: Service[] = [
     ],
     price: 250000,
     duration: "7 Days",
-    image: "https://images.pexels.com/photos/162240/tiger-nature-wild-cat-162240.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image:
+      "https://images.pexels.com/photos/162240/tiger-nature-wild-cat-162240.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
 ];
 
@@ -308,62 +364,72 @@ export const blogPosts: BlogPost[] = [
   {
     id: "1",
     title: "The Art of Capturing Authentic Wedding Moments",
-    excerpt: "Discover the techniques and philosophy behind capturing genuine emotions on the most important day of people's lives.",
-    content: `Wedding photography is more than just documenting an event; it's about capturing the essence of human connections...`,
-    image: "https://images.pexels.com/photos/1739090/pexels-photo-1739090.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    category: "Wedding Photography",
+    excerpt:
+      "Discover the techniques and philosophy behind capturing genuine emotions on the most important day of people's lives.",
+    content: `Street photography is more than just documenting an event; it's about capturing the essence of human connections...`,
+    image:
+      "https://images.pexels.com/photos/1739090/pexels-photo-1739090.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    category: "Street Photography",
     tags: ["Wedding", "Tips", "Candid", "Emotions"],
     date: "2024-02-15",
     readTime: "8 min read",
-    author: "Arjun",
+    author: "Shivam",
   },
   {
     id: "2",
     title: "Mastering Natural Light: A Photographer's Guide",
-    excerpt: "Learn how to harness natural light in any situation to create stunning, cinematic photographs without artificial lighting.",
+    excerpt:
+      "Learn how to harness natural light in any situation to create stunning, cinematic photographs without artificial lighting.",
     content: `Natural light is the most powerful tool in a photographer's arsenal...`,
-    image: "https://images.pexels.com/photos/1536617/pexels-photo-1536617.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image:
+      "https://images.pexels.com/photos/1536617/pexels-photo-1536617.jpeg?auto=compress&cs=tinysrgb&w=1200",
     category: "Techniques",
     tags: ["Lighting", "Natural", "Techniques", "Outdoor"],
     date: "2024-01-28",
     readTime: "12 min read",
-    author: "Arjun",
+    author: "Shivam",
   },
   {
     id: "3",
     title: "Behind the Lens: A Month in Ranthambore",
-    excerpt: "Join me on a month-long wildlife photography expedition and discover what it takes to capture India's majestic tigers.",
+    excerpt:
+      "Join me on a month-long wildlife photography expedition and discover what it takes to capture India's majestic tigers.",
     content: `The early morning mist hung low over Ranthambore as our jeep silently made its way through the forest...`,
-    image: "https://images.pexels.com/photos/162240/tiger-nature-wild-cat-162240.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image:
+      "https://images.pexels.com/photos/162240/tiger-nature-wild-cat-162240.jpeg?auto=compress&cs=tinysrgb&w=1200",
     category: "Wildlife",
     tags: ["Wildlife", "Expedition", "Tigers", "Documentary"],
     date: "2024-01-10",
     readTime: "15 min read",
-    author: "Arjun",
+    author: "Shivam",
   },
   {
     id: "4",
     title: "Building Your Photography Brand: Lessons Learned",
-    excerpt: "Essential insights on establishing yourself as a professional photographer in today's competitive market.",
+    excerpt:
+      "Essential insights on establishing yourself as a professional photographer in today's competitive market.",
     content: `The journey from hobbyist to professional is filled with challenges that go beyond technical skills...`,
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image:
+      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1200",
     category: "Business",
     tags: ["Business", "Brand", "Tips", "Professional"],
     date: "2023-12-20",
     readTime: "10 min read",
-    author: "Arjun",
+    author: "Shivam",
   },
   {
     id: "5",
     title: "The Evolution of Indian Wedding Photography",
-    excerpt: "Explore how Indian wedding photography has transformed over the decades and what the future holds.",
+    excerpt:
+      "Explore how Indian wedding photography has transformed over the decades and what the future holds.",
     content: `Indian weddings have always been grand celebrations, but the way we document them has evolved dramatically...`,
-    image: "https://images.pexels.com/photos/3014858/pexels-photo-3014858.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    category: "Wedding Photography",
+    image:
+      "https://images.pexels.com/photos/3014858/pexels-photo-3014858.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    category: "Street Photography",
     tags: ["Wedding", "Indian", "Trends", "Evolution"],
     date: "2023-11-15",
     readTime: "9 min read",
-    author: "Arjun",
+    author: "Shivam",
   },
 ];
 
@@ -374,8 +440,10 @@ export const awards: Award[] = [
     organization: "Indian Photography Awards",
     year: 2023,
     category: "Wedding",
-    image: "https://images.pexels.com/photos/1739090/pexels-photo-1739090.jpeg?auto=compress&cs=tinysrgb&w=200",
-    description: "Recognized for exceptional wedding photography that captures the depth of human emotion.",
+    image:
+      "https://images.pexels.com/photos/1739090/pexels-photo-1739090.jpeg?auto=compress&cs=tinysrgb&w=200",
+    description:
+      "Recognized for exceptional wedding photography that captures the depth of human emotion.",
   },
   {
     id: "2",
@@ -383,8 +451,10 @@ export const awards: Award[] = [
     organization: "Sanctuary Asia",
     year: 2022,
     category: "Wildlife",
-    image: "https://images.pexels.com/photos/162240/tiger-nature-wild-cat-162240.jpeg?auto=compress&cs=tinysrgb&w=200",
-    description: "Award for outstanding contribution to wildlife photography and conservation awareness.",
+    image:
+      "https://images.pexels.com/photos/162240/tiger-nature-wild-cat-162240.jpeg?auto=compress&cs=tinysrgb&w=200",
+    description:
+      "Award for outstanding contribution to wildlife photography and conservation awareness.",
   },
   {
     id: "3",
@@ -392,8 +462,10 @@ export const awards: Award[] = [
     organization: "Femina",
     year: 2022,
     category: "Fashion",
-    image: "https://images.pexels.com/photos/1536617/pexels-photo-1536617.jpeg?auto=compress&cs=tinysrgb&w=200",
-    description: "Recognition for innovative approach to fashion photography and editorial work.",
+    image:
+      "https://images.pexels.com/photos/1536617/pexels-photo-1536617.jpeg?auto=compress&cs=tinysrgb&w=200",
+    description:
+      "Recognition for innovative approach to fashion photography and editorial work.",
   },
   {
     id: "4",
@@ -401,8 +473,10 @@ export const awards: Award[] = [
     organization: "Lonely Planet",
     year: 2021,
     category: "Travel",
-    image: "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=200",
-    description: "Best travel photography series documenting India's hidden destinations.",
+    image:
+      "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=200",
+    description:
+      "Best travel photography series documenting India's hidden destinations.",
   },
   {
     id: "5",
@@ -410,8 +484,10 @@ export const awards: Award[] = [
     organization: "India Art Fair",
     year: 2020,
     category: "Fine Art",
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=200",
-    description: "Recognition for artistic excellence in contemporary photography.",
+    image:
+      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=200",
+    description:
+      "Recognition for artistic excellence in contemporary photography.",
   },
   {
     id: "6",
@@ -419,7 +495,8 @@ export const awards: Award[] = [
     organization: "Professional Photographers of India",
     year: 2019,
     category: "Portrait",
-    image: "https://images.pexels.com/photos/3586967/pexels-photo-3586967.jpeg?auto=compress&cs=tinysrgb&w=200",
+    image:
+      "https://images.pexels.com/photos/3586967/pexels-photo-3586967.jpeg?auto=compress&cs=tinysrgb&w=200",
     description: "Award for exceptional portraiture capturing human stories.",
   },
 ];
@@ -468,49 +545,56 @@ export const timeline: TimelineEvent[] = [
     id: "1",
     year: 2015,
     title: "The Beginning",
-    description: "Started professional photography journey with a second-hand camera and a dream.",
+    description:
+      "Started professional photography journey with a second-hand camera and a dream.",
     type: "milestone",
   },
   {
     id: "2",
     year: 2016,
     title: "First Breakthrough",
-    description: "Landed first major wedding client and discovered my passion for capturing human connections.",
+    description:
+      "Landed first major wedding client and discovered my passion for capturing human connections.",
     type: "project",
   },
   {
     id: "3",
     year: 2017,
     title: "Editorial Debut",
-    description: "First fashion editorial published in a national magazine, opening doors to commercial projects.",
+    description:
+      "First fashion editorial published in a national magazine, opening doors to commercial projects.",
     type: "milestone",
   },
   {
     id: "4",
     year: 2018,
     title: "National Geographic Feature",
-    description: "Wildlife series featured in Nat Geo, marking entry into professional wildlife photography.",
+    description:
+      "Wildlife series featured in Nat Geo, marking entry into professional wildlife photography.",
     type: "project",
   },
   {
     id: "5",
     year: 2019,
     title: "First Award",
-    description: "Won Portrait Master Award from Professional Photographers of India.",
+    description:
+      "Won Portrait Master Award from Professional Photographers of India.",
     type: "award",
   },
   {
     id: "6",
     year: 2020,
     title: "Art Fair Recognition",
-    description: "Selected for Emerging Artist Award at India Art Fair for fine art photography series.",
+    description:
+      "Selected for Emerging Artist Award at India Art Fair for fine art photography series.",
     type: "award",
   },
   {
     id: "7",
     year: 2021,
     title: "Travel Achievement",
-    description: "Won Lonely Planet Travel Photography Award for documenting Northeast India.",
+    description:
+      "Won Lonely Planet Travel Photography Award for documenting Northeast India.",
     type: "award",
   },
   {
@@ -524,14 +608,16 @@ export const timeline: TimelineEvent[] = [
     id: "9",
     year: 2023,
     title: "Wildlife Recognition",
-    description: "Honored with Wildlife Photographer of the Year by Sanctuary Asia for tiger conservation series.",
+    description:
+      "Honored with Wildlife Photographer of the Year by Sanctuary Asia for tiger conservation series.",
     type: "award",
   },
   {
     id: "10",
     year: 2024,
     title: "Best Wedding Photographer",
-    description: "Won Best Wedding Photographer at Indian Photography Awards, capping a journey of growth.",
+    description:
+      "Won Best Wedding Photographer at Indian Photography Awards, capping a journey of growth.",
     type: "award",
   },
 ];
@@ -540,37 +626,43 @@ export const faqs: FAQ[] = [
   {
     id: "1",
     question: "How far in advance should I book for my wedding?",
-    answer: "For weddings, I recommend booking 6-12 months in advance, especially during peak wedding season (October-February). However, I occasionally have last-minute availability, so don't hesitate to inquire.",
+    answer:
+      "For weddings, I recommend booking 6-12 months in advance, especially during peak wedding season (October-February). However, I occasionally have last-minute availability, so don't hesitate to inquire.",
     category: "Booking",
   },
   {
     id: "2",
     question: "What is your photography style?",
-    answer: "My style is a blend of candid documentary and cinematic artistry. I focus on capturing authentic moments while creating visually stunning compositions. Each shot tells a story.",
+    answer:
+      "My style is a blend of candid documentary and cinematic artistry. I focus on capturing authentic moments while creating visually stunning compositions. Each shot tells a story.",
     category: "Style",
   },
   {
     id: "3",
     question: "Do you travel for destination shoots?",
-    answer: "Absolutely! I love destination work and have photographed across India and internationally. Travel costs are included in custom quotes depending on the location.",
+    answer:
+      "Absolutely! I love destination work and have photographed across India and internationally. Travel costs are included in custom quotes depending on the location.",
     category: "Travel",
   },
   {
     id: "4",
     question: "How long until we receive our photos?",
-    answer: "Turnaround time varies by project: weddings take 4-6 weeks, portraits 1-2 weeks, and commercial projects 2-3 weeks. Rush delivery is available for an additional fee.",
+    answer:
+      "Turnaround time varies by project: weddings take 4-6 weeks, portraits 1-2 weeks, and commercial projects 2-3 weeks. Rush delivery is available for an additional fee.",
     category: "Delivery",
   },
   {
     id: "5",
     question: "Do you provide raw files?",
-    answer: "I provide professionally edited final images. Raw files are available for purchase as an add-on for commercial and editorial clients.",
+    answer:
+      "I provide professionally edited final images. Raw files are available for purchase as an add-on for commercial and editorial clients.",
     category: "Files",
   },
   {
     id: "6",
     question: "What equipment do you use?",
-    answer: "I use professional-grade Canon and Sony mirrorless cameras with a range of prime and zoom lenses. Backup equipment is always on hand to ensure zero disruptions.",
+    answer:
+      "I use professional-grade Canon and Sony mirrorless cameras with a range of prime and zoom lenses. Backup equipment is always on hand to ensure zero disruptions.",
     category: "Equipment",
   },
 ];
@@ -579,34 +671,99 @@ export const equipment: Equipment[] = [
   {
     category: "Camera Bodies",
     items: [
-      { name: "Primary", brand: "Sony", model: "A7R V", image: "/images/equipment/camera.jpg" },
-      { name: "Secondary", brand: "Canon", model: "EOS R5", image: "/images/equipment/camera.jpg" },
-      { name: "Backup", brand: "Sony", model: "A7 IV", image: "/images/equipment/camera.jpg" },
+      {
+        name: "Primary",
+        brand: "Sony",
+        model: "A7R V",
+        image: "/images/equipment/camera.jpg",
+      },
+      {
+        name: "Secondary",
+        brand: "Canon",
+        model: "EOS R5",
+        image: "/images/equipment/camera.jpg",
+      },
+      {
+        name: "Backup",
+        brand: "Sony",
+        model: "A7 IV",
+        image: "/images/equipment/camera.jpg",
+      },
     ],
   },
   {
     category: "Lenses",
     items: [
-      { name: "Portrait", brand: "Sony", model: "85mm f/1.4 GM II", image: "/images/equipment/lens.jpg" },
-      { name: "Zoom", brand: "Sony", model: "24-70mm f/2.8 GM II", image: "/images/equipment/lens.jpg" },
-      { name: "Telephoto", brand: "Sony", model: "70-200mm f/2.8 GM II", image: "/images/equipment/lens.jpg" },
-      { name: "Wildlife", brand: "Sony", model: "200-600mm f/5.6-6.3 G", image: "/images/equipment/lens.jpg" },
+      {
+        name: "Portrait",
+        brand: "Sony",
+        model: "85mm f/1.4 GM II",
+        image: "/images/equipment/lens.jpg",
+      },
+      {
+        name: "Zoom",
+        brand: "Sony",
+        model: "24-70mm f/2.8 GM II",
+        image: "/images/equipment/lens.jpg",
+      },
+      {
+        name: "Telephoto",
+        brand: "Sony",
+        model: "70-200mm f/2.8 GM II",
+        image: "/images/equipment/lens.jpg",
+      },
+      {
+        name: "Wildlife",
+        brand: "Sony",
+        model: "200-600mm f/5.6-6.3 G",
+        image: "/images/equipment/lens.jpg",
+      },
     ],
   },
   {
     category: "Lighting",
     items: [
-      { name: "Strobe", brand: "Profoto", model: "B10X Plus", image: "/images/equipment/light.jpg" },
-      { name: "Flash", brand: "Godox", model: "V1 Pro", image: "/images/equipment/light.jpg" },
-      { name: "Continuous", brand: "Aputure", model: "300D II", image: "/images/equipment/light.jpg" },
+      {
+        name: "Strobe",
+        brand: "Profoto",
+        model: "B10X Plus",
+        image: "/images/equipment/light.jpg",
+      },
+      {
+        name: "Flash",
+        brand: "Godox",
+        model: "V1 Pro",
+        image: "/images/equipment/light.jpg",
+      },
+      {
+        name: "Continuous",
+        brand: "Aputure",
+        model: "300D II",
+        image: "/images/equipment/light.jpg",
+      },
     ],
   },
   {
     category: "Accessories",
     items: [
-      { name: "Tripod", brand: "Gitzo", model: "GT3543LS", image: "/images/equipment/tripod.jpg" },
-      { name: "Drone", brand: "DJI", model: "Mavic 3 Pro", image: "/images/equipment/drone.jpg" },
-      { name: "Storage", brand: "SanDisk", model: "Extreme Pro 256GB", image: "/images/equipment/storage.jpg" },
+      {
+        name: "Tripod",
+        brand: "Gitzo",
+        model: "GT3543LS",
+        image: "/images/equipment/tripod.jpg",
+      },
+      {
+        name: "Drone",
+        brand: "DJI",
+        model: "Mavic 3 Pro",
+        image: "/images/equipment/drone.jpg",
+      },
+      {
+        name: "Storage",
+        brand: "SanDisk",
+        model: "Extreme Pro 256GB",
+        image: "/images/equipment/storage.jpg",
+      },
     ],
   },
 ];
@@ -622,7 +779,11 @@ export const categories = [
 
 export const stats = [
   { label: "Years Experience", value: photographer.experience, suffix: "+" },
-  { label: "Projects Completed", value: photographer.projectsCompleted, suffix: "+" },
+  {
+    label: "Projects Completed",
+    value: photographer.projectsCompleted,
+    suffix: "+",
+  },
   { label: "Happy Clients", value: photographer.happyClients, suffix: "+" },
   { label: "Awards Won", value: photographer.awardsWon, suffix: "+" },
 ];

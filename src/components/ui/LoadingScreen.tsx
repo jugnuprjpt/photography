@@ -29,7 +29,10 @@ export function LoadingScreen() {
         <motion.div
           className="fixed inset-0 z-[9999] bg-[var(--obsidian)] flex flex-col items-center justify-center"
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, transition: { duration: 0.8, ease: "easeInOut" } }}
+          exit={{
+            opacity: 0,
+            transition: { duration: 0.8, ease: "easeInOut" },
+          }}
         >
           {/* Background gradient */}
           <div className="absolute inset-0 bg-gradient-radial opacity-50" />
@@ -117,5 +120,5 @@ export function LoadingScreen() {
 }
 
 const photographerData = {
-  name: "ARJUN PHOTOGRAPHY",
+  name: "Shivam PHOTOGRAPHY",
 };

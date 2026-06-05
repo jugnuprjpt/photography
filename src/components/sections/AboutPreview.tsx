@@ -11,10 +11,7 @@ export function AboutPreview() {
   const { ref, isInView } = useInView(0.2);
 
   return (
-    <section
-      ref={ref}
-      className="relative py-24 md:py-32 overflow-hidden"
-    >
+    <section ref={ref} className="relative py-24 md:py-32 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--obsidian)] via-[var(--charcoal)] to-[var(--obsidian)]" />
 
@@ -31,7 +28,7 @@ export function AboutPreview() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
               <Image
                 src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Arjun Photography"
+                alt="Shivam Photography"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -41,7 +38,7 @@ export function AboutPreview() {
             </div>
 
             {/* Experience badge */}
-            <motion.div
+            {/* <motion.div
               className="absolute -bottom-6 -right-6 md:right-10 glass px-8 py-6 rounded-sm"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -53,7 +50,7 @@ export function AboutPreview() {
               <p className="text-sm uppercase tracking-wider text-[var(--muted)] mt-1">
                 Years Experience
               </p>
-            </motion.div>
+            </motion.div> */}
 
             {/* Decorative frame */}
             <div className="absolute -inset-4 border border-[var(--gold)] opacity-20 rounded-sm pointer-events-none" />
@@ -64,7 +61,11 @@ export function AboutPreview() {
             className="space-y-8"
             initial={{ opacity: 0, x: 60 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2,
+              ease: [0.25, 0.46, 0.45, 0.94],
+            }}
           >
             {/* Section label */}
             <div>
@@ -86,9 +87,9 @@ export function AboutPreview() {
             {/* Specializations */}
             <div className="space-y-4">
               <h3 className="text-sm uppercase tracking-wider text-[var(--muted)]">
-                Specializations
+                Photography - Videography - Editing
               </h3>
-              <div className="grid grid-cols-2 gap-3">
+              {/* <div className="grid grid-cols-2 gap-3">
                 {photographer.specializations.map((spec, index) => (
                   <motion.div
                     key={spec}
@@ -103,7 +104,7 @@ export function AboutPreview() {
                     </span>
                   </motion.div>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             {/* CTA */}

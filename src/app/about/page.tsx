@@ -14,7 +14,7 @@ import { useInView } from "@/hooks/useScrollAnimation";
 import { useLenis } from "@/hooks";
 
 const skills = [
-  { name: "Wedding Photography", level: 95 },
+  { name: "Street Photography", level: 95 },
   { name: "Portrait Photography", level: 90 },
   { name: "Fashion Photography", level: 88 },
   { name: "Travel Photography", level: 92 },
@@ -119,7 +119,7 @@ export default function AboutPage() {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
                   <Image
                     src="https://images.pexels.com/photos/3586967/pexels-photo-3586967.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="Arjun at work"
+                    alt="Shivam at work"
                     fill
                     className="object-cover"
                   />
@@ -139,10 +139,11 @@ export default function AboutPage() {
                 </h2>
                 <div className="prose prose-lg text-[var(--muted)]">
                   <p>
-                    What started as a hobby with a second-hand camera in 2015 has
-                    evolved into a lifelong passion for capturing the essence of
-                    human emotion and natural beauty. Every click of the shutter is
-                    an opportunity to tell a story that words cannot express.
+                    What started as a hobby with a second-hand camera in 2015
+                    has evolved into a lifelong passion for capturing the
+                    essence of human emotion and natural beauty. Every click of
+                    the shutter is an opportunity to tell a story that words
+                    cannot express.
                   </p>
                   <p>
                     Over the years, I&apos;ve had the privilege of working with
@@ -152,12 +153,12 @@ export default function AboutPage() {
                     composition, and the art of storytelling.
                   </p>
                   <p>
-                    My philosophy is simple: photography is not just about taking
-                    pictures. It&apos;s about freezing moments in time, creating memories
-                    that will be cherished for generations. Whether it&apos;s the
-                    authentic joy of a wedding, the raw beauty of wildlife, or the
-                    creative expression of fashion, I bring the same dedication and
-                    artistic vision to every shot.
+                    My philosophy is simple: photography is not just about
+                    taking pictures. It&apos;s about freezing moments in time,
+                    creating memories that will be cherished for generations.
+                    Whether it&apos;s the authentic joy of a wedding, the raw
+                    beauty of wildlife, or the creative expression of fashion, I
+                    bring the same dedication and artistic vision to every shot.
                   </p>
                 </div>
               </motion.div>
@@ -200,11 +201,19 @@ export default function AboutPage() {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
                     {/* Content */}
-                    <div className={`flex-1 ${index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"}`}>
+                    <div
+                      className={`flex-1 ${index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"}`}
+                    >
                       <div className="glass p-6 rounded-sm inline-block">
-                        <span className="text-[var(--gold)] text-sm font-medium">{event.year}</span>
-                        <h3 className="text-xl font-display font-bold mt-2 mb-2">{event.title}</h3>
-                        <p className="text-[var(--muted)] text-sm">{event.description}</p>
+                        <span className="text-[var(--gold)] text-sm font-medium">
+                          {event.year}
+                        </span>
+                        <h3 className="text-xl font-display font-bold mt-2 mb-2">
+                          {event.title}
+                        </h3>
+                        <p className="text-[var(--muted)] text-sm">
+                          {event.description}
+                        </p>
                         <span className="inline-block mt-3 text-xs uppercase tracking-wider px-3 py-1 bg-[var(--gold)]/10 text-[var(--gold)] rounded-full">
                           {event.type}
                         </span>
@@ -259,8 +268,12 @@ export default function AboutPage() {
                   <h3 className="text-lg font-bold mb-2 group-hover:text-[var(--gold)] transition-colors">
                     {award.title}
                   </h3>
-                  <p className="text-sm text-[var(--muted)] mb-2">{award.organization}</p>
-                  <p className="text-sm text-[var(--muted)]">{award.description}</p>
+                  <p className="text-sm text-[var(--muted)] mb-2">
+                    {award.organization}
+                  </p>
+                  <p className="text-sm text-[var(--muted)]">
+                    {award.description}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -294,8 +307,12 @@ export default function AboutPage() {
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                     >
                       <div className="flex justify-between items-center mb-2">
-                        <span className="text-sm font-medium">{skill.name}</span>
-                        <span className="text-sm text-[var(--gold)]">{skill.level}%</span>
+                        <span className="text-sm font-medium">
+                          {skill.name}
+                        </span>
+                        <span className="text-sm text-[var(--gold)]">
+                          {skill.level}%
+                        </span>
                       </div>
                       <div className="h-2 bg-[var(--glass)] rounded-full overflow-hidden">
                         <motion.div
@@ -321,7 +338,8 @@ export default function AboutPage() {
                 {/* Equipment */}
                 <h3 className="text-2xl font-display font-bold">Equipment</h3>
                 <p className="text-[var(--muted)]">
-                  I use professional-grade equipment to ensure the highest quality results for every project.
+                  I use professional-grade equipment to ensure the highest
+                  quality results for every project.
                 </p>
 
                 <div className="space-y-6">
@@ -336,7 +354,9 @@ export default function AboutPage() {
                             key={`${item.brand}-${item.model}`}
                             className="flex items-center justify-between text-sm"
                           >
-                            <span className="text-[var(--foreground)]">{item.name}</span>
+                            <span className="text-[var(--foreground)]">
+                              {item.name}
+                            </span>
                             <span className="text-[var(--muted)]">
                               {item.brand} {item.model}
                             </span>
@@ -360,7 +380,8 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Let&apos;s Create Something <span className="text-gradient">Beautiful</span>
+              Let&apos;s Create Something{" "}
+              <span className="text-gradient">Beautiful</span>
             </motion.h2>
             <motion.p
               className="text-lg text-[var(--muted)] max-w-2xl mx-auto mb-8"
@@ -369,8 +390,8 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Ready to capture your special moments? Let&apos;s discuss your project
-              and create memories that last forever.
+              Ready to capture your special moments? Let&apos;s discuss your
+              project and create memories that last forever.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 40 }}

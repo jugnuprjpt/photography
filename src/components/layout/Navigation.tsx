@@ -58,9 +58,7 @@ export function Navigation({ theme, toggleTheme }: NavigationProps) {
       <motion.header
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-          isScrolled
-            ? "glass py-4"
-            : "bg-transparent py-6"
+          isScrolled ? "glass py-4" : "bg-transparent py-6",
         )}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -120,7 +118,7 @@ export function Navigation({ theme, toggleTheme }: NavigationProps) {
               href="/contact"
               className="px-6 py-2.5 bg-[var(--gold)] text-[var(--obsidian)] font-medium uppercase tracking-wider text-sm rounded-sm hover:bg-[var(--gold-light)] transition-colors cursor-hover"
             >
-              Book Now
+              Book a Shoot
             </Link>
           </div>
 
@@ -207,7 +205,7 @@ export function Navigation({ theme, toggleTheme }: NavigationProps) {
                       "text-4xl font-display font-medium tracking-wider transition-colors duration-300",
                       pathname === link.href
                         ? "text-[var(--gold)]"
-                        : "text-[var(--foreground)] hover:text-[var(--gold)]"
+                        : "text-[var(--foreground)] hover:text-[var(--gold)]",
                     )}
                   >
                     {link.label}
@@ -227,7 +225,7 @@ export function Navigation({ theme, toggleTheme }: NavigationProps) {
                   href="/contact"
                   className="px-8 py-4 bg-[var(--gold)] text-[var(--obsidian)] font-medium uppercase tracking-wider text-lg rounded-sm"
                 >
-                  Book Now
+                  Book a Shoot
                 </Link>
               </motion.div>
             </nav>
@@ -244,7 +242,9 @@ export function Navigation({ theme, toggleTheme }: NavigationProps) {
                   exit={{ opacity: 0, y: 20 }}
                   transition={{ duration: 0.3, delay: 0.6 + index * 0.1 }}
                 >
-                  <span className="text-sm uppercase tracking-wider">{social}</span>
+                  <span className="text-sm uppercase tracking-wider">
+                    {social}
+                  </span>
                 </motion.a>
               ))}
             </div>
@@ -271,7 +271,7 @@ function NavLink({
         "relative text-sm uppercase tracking-widest font-medium transition-colors duration-300 cursor-hover",
         isActive
           ? "text-[var(--gold)]"
-          : "text-[var(--foreground)] hover:text-[var(--gold)]"
+          : "text-[var(--foreground)] hover:text-[var(--gold)]",
       )}
     >
       {label}

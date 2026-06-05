@@ -4,7 +4,16 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Share2, Send, Calendar, Clock, CircleCheck as CheckCircle } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Share2,
+  Send,
+  Calendar,
+  Clock,
+  CircleCheck as CheckCircle,
+} from "lucide-react";
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { CustomCursor } from "@/components/ui/CustomCursor";
@@ -13,7 +22,7 @@ import { photographer } from "@/data/mockData";
 import { useLenis } from "@/hooks";
 
 const serviceOptions = [
-  "Wedding Photography",
+  "Street Photography",
   "Portrait Photography",
   "Fashion Photography",
   "Travel Photography",
@@ -90,7 +99,7 @@ export default function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     setFormData((prev) => ({
       ...prev,
@@ -145,8 +154,8 @@ export default function ContactPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              Have a project in mind? I&apos;d love to hear about it. Get in touch and
-              let&apos;s bring your vision to life.
+              Have a project in mind? I&apos;d love to hear about it. Get in
+              touch and let&apos;s bring your vision to life.
             </motion.p>
           </div>
         </section>
@@ -176,7 +185,9 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-medium mb-1">Email</h3>
-                      <p className="text-[var(--muted)]">{photographer.email}</p>
+                      <p className="text-[var(--muted)]">
+                        {photographer.email}
+                      </p>
                     </div>
                   </a>
 
@@ -190,7 +201,9 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-medium mb-1">Phone</h3>
-                      <p className="text-[var(--muted)]">{photographer.phone}</p>
+                      <p className="text-[var(--muted)]">
+                        {photographer.phone}
+                      </p>
                     </div>
                   </a>
 
@@ -201,7 +214,9 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-medium mb-1">Location</h3>
-                      <p className="text-[var(--muted)]">{photographer.location}</p>
+                      <p className="text-[var(--muted)]">
+                        {photographer.location}
+                      </p>
                       <p className="text-sm text-[var(--muted)] mt-1">
                         Available for travel worldwide
                       </p>
@@ -506,13 +521,16 @@ export default function ContactPage() {
 
               {/* Decorative grid lines */}
               <div className="absolute inset-0 opacity-10">
-                <div className="absolute inset-0" style={{
-                  backgroundImage: `
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    backgroundImage: `
                     linear-gradient(rgba(201,169,98,0.3) 1px, transparent 1px),
                     linear-gradient(90deg, rgba(201,169,98,0.3) 1px, transparent 1px)
                   `,
-                  backgroundSize: '50px 50px'
-                }} />
+                    backgroundSize: "50px 50px",
+                  }}
+                />
               </div>
             </motion.div>
           </div>

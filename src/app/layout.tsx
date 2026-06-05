@@ -21,22 +21,22 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Arjun Photography | Capturing Stories Through Light",
+  title: "Shivam Photography | Capturing Stories Through Light",
   description:
-    "Award-winning photographer specializing in wedding, portrait, fashion, travel, and wildlife photography. 8+ years of experience capturing timeless moments.",
+    "Award-winning photographer specializing in wedding, portrait, fashion, travel, and wildlife photography. 4+ years of experience capturing timeless moments.",
   keywords: [
     "photography",
-    "wedding photography",
+    "street photography",
     "portrait photographer",
     "fashion photography",
     "travel photography",
     "wildlife photography",
     "professional photographer",
-    "Arjun Photography",
+    "Shivam Photography",
   ],
-  authors: [{ name: "Arjun Photography" }],
+  authors: [{ name: "Shivam Photography" }],
   openGraph: {
-    title: "Arjun Photography | Capturing Stories Through Light",
+    title: "Shivam Photography | Capturing Stories Through Light",
     description:
       "Award-winning photographer specializing in wedding, portrait, fashion, travel, and wildlife photography.",
     type: "website",
@@ -45,13 +45,13 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Arjun Photography",
+        alt: "Shivam Photography",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arjun Photography | Capturing Stories Through Light",
+    title: "Shivam Photography | Capturing Stories Through Light",
     description:
       "Award-winning photographer specializing in wedding, portrait, fashion, travel, and wildlife photography.",
   },

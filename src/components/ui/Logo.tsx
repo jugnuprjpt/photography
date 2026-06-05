@@ -21,7 +21,7 @@ export function Logo({ className = "", size = "md" }: LogoProps) {
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
     >
-      <span className="text-[var(--foreground)]">Arjun</span>
+      <span className="text-[var(--foreground)]">Shivam</span>
       <span className="text-gradient">Photography</span>
     </motion.a>
   );

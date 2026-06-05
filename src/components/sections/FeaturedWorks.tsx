@@ -14,10 +14,7 @@ export function FeaturedWorks() {
   const { ref, isInView } = useInView(0.1);
 
   return (
-    <section
-      ref={ref}
-      className="relative py-24 md:py-32 overflow-hidden"
-    >
+    <section ref={ref} className="relative py-24 md:py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-[var(--obsidian)]" />
 
@@ -56,9 +53,7 @@ export function FeaturedWorks() {
             <motion.div
               key={project.id}
               className={`group relative cursor-hover ${
-                index === 0 || index === 3
-                  ? "md:col-span-2 lg:col-span-2"
-                  : ""
+                index === 0 || index === 3 ? "md:col-span-2 lg:col-span-2" : ""
               }`}
               initial={{ opacity: 0, y: 60 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -90,9 +85,7 @@ export function FeaturedWorks() {
                   {/* Content */}
                   <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
                     {/* Category */}
-                    <motion.span
-                      className="text-xs uppercase tracking-wider text-[var(--gold)] mb-2 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500"
-                    >
+                    <motion.span className="text-xs uppercase tracking-wider text-[var(--gold)] mb-2 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                       {project.category}
                     </motion.span>
 
@@ -107,9 +100,7 @@ export function FeaturedWorks() {
                     </p>
 
                     {/* View project button */}
-                    <motion.div
-                      className="mt-4 flex items-center gap-2 text-[var(--gold)] opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500"
-                    >
+                    <motion.div className="mt-4 flex items-center gap-2 text-[var(--gold)] opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                       <span className="text-sm uppercase tracking-wider">
                         View Project
                       </span>
@@ -127,7 +118,7 @@ export function FeaturedWorks() {
         </div>
 
         {/* Bottom CTA */}
-        <motion.div
+        {/* <motion.div
           className="mt-16 text-center"
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -139,7 +130,7 @@ export function FeaturedWorks() {
           >
             Explore Full Portfolio
           </Link>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

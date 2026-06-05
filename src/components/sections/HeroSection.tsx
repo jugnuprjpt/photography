@@ -73,7 +73,7 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-[var(--gold)] font-medium">
             <span className="w-12 h-[1px] bg-[var(--gold)]" />
-            Award-Winning Photography
+            Visual Storyteller
             <span className="w-12 h-[1px] bg-[var(--gold)]" />
           </span>
         </motion.div>
@@ -87,7 +87,9 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 0.2 }}
         >
           <span className="block">{photographer.name.split(" ")[0]}</span>
-          <span className="block text-gradient">{photographer.name.split(" ")[1]}</span>
+          <span className="block text-gradient">
+            {photographer.name.split(" ")[1]}
+          </span>
         </motion.h1>
 
         {/* Tagline */}
@@ -128,7 +130,7 @@ export function HeroSection() {
             <Link href="/portfolio">View Portfolio</Link>
           </GlowButton>
           <Button variant="outline" arrow>
-            <Link href="/contact">Book a Session</Link>
+            <Link href="/contact">Book a Shoot</Link>
           </Button>
         </motion.div>
       </div>
