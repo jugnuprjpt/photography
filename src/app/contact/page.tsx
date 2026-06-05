@@ -31,13 +31,7 @@ const serviceOptions = [
   "Other",
 ];
 
-const budgetRanges = [
-  "Under 25,000",
-  "25,000 - 50,000",
-  "50,000 - 100,000",
-  "100,000 - 200,000",
-  "200,000+",
-];
+
 
 export default function ContactPage() {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
@@ -49,7 +43,6 @@ export default function ContactPage() {
     phone: "",
     service: "",
     date: "",
-    budget: "",
     message: "",
   });
 
@@ -90,7 +83,6 @@ export default function ContactPage() {
         phone: "",
         service: "",
         date: "",
-        budget: "",
         message: "",
       });
     }, 3000);
@@ -254,19 +246,8 @@ export default function ContactPage() {
                     <Clock className="w-5 h-5 text-[var(--gold)]" />
                     <h3 className="font-medium">Working Hours</h3>
                   </div>
-                  <div className="space-y-2 text-sm text-[var(--muted)]">
-                    <div className="flex justify-between">
-                      <span>Monday - Friday</span>
-                      <span>9:00 AM - 7:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Saturday</span>
-                      <span>10:00 AM - 5:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Sunday</span>
-                      <span>By Appointment</span>
-                    </div>
+                  <div className="text-sm text-[var(--muted)]">
+                    I am available any time 24 hours.
                   </div>
                 </div>
               </motion.div>
@@ -400,29 +381,7 @@ export default function ContactPage() {
                         </div>
                       </div>
 
-                      {/* Budget */}
-                      <div>
-                        <label
-                          htmlFor="budget"
-                          className="block text-sm font-medium mb-2"
-                        >
-                          Budget Range
-                        </label>
-                        <select
-                          id="budget"
-                          name="budget"
-                          value={formData.budget}
-                          onChange={handleChange}
-                          className="w-full px-4 py-3 bg-[var(--glass)] border border-[var(--glass-border)] rounded-sm text-[var(--foreground)] focus:outline-none focus:border-[var(--gold)] transition-colors cursor-hover"
-                        >
-                          <option value="">Select your budget</option>
-                          {budgetRanges.map((budget) => (
-                            <option key={budget} value={budget}>
-                              ₹{budget}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
+
 
                       {/* Message */}
                       <div>

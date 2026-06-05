@@ -192,9 +192,8 @@ export default function AboutPage() {
                 {timeline.map((event, index) => (
                   <motion.div
                     key={event.id}
-                    className={`relative flex items-center ${
-                      index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                    }`}
+                    className={`relative flex items-center ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                      }`}
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -233,7 +232,7 @@ export default function AboutPage() {
         </section>
 
         {/* Awards Section */}
-        <section className="py-24">
+        {/* <section className="py-24">
           <div className="container mx-auto px-6">
             <motion.div
               className="text-center mb-16"
@@ -278,10 +277,10 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Skills Section */}
-        <section ref={skillsRef.ref} className="py-24 bg-[var(--charcoal)]">
+        {/* <section ref={skillsRef.ref} className="py-24 bg-[var(--charcoal)]">
           <div className="container mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <motion.div
@@ -336,40 +335,41 @@ export default function AboutPage() {
                 transition={{ duration: 0.8 }}
               >
                 {/* Equipment */}
-                <h3 className="text-2xl font-display font-bold">Equipment</h3>
-                <p className="text-[var(--muted)]">
-                  I use professional-grade equipment to ensure the highest
-                  quality results for every project.
-                </p>
+        {/* <h3 className="text-2xl font-display font-bold">Equipment</h3>
+        <p className="text-[var(--muted)]">
+          I use professional-grade equipment to ensure the highest
+          quality results for every project.
+        </p> */}
 
-                <div className="space-y-6">
-                  {equipment.map((category) => (
-                    <div key={category.category}>
-                      <h4 className="text-sm uppercase tracking-wider text-[var(--gold)] mb-3">
-                        {category.category}
-                      </h4>
-                      <div className="space-y-2">
-                        {category.items.map((item) => (
-                          <div
-                            key={`${item.brand}-${item.model}`}
-                            className="flex items-center justify-between text-sm"
-                          >
-                            <span className="text-[var(--foreground)]">
-                              {item.name}
-                            </span>
-                            <span className="text-[var(--muted)]">
-                              {item.brand} {item.model}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
+        {/* <div className="space-y-6">
+          {equipment.map((category) => (
+            <div key={category.category}>
+              <h4 className="text-sm uppercase tracking-wider text-[var(--gold)] mb-3">
+                {category.category}
+              </h4>
+              <div className="space-y-2">
+                {category.items.map((item) => (
+                  <div
+                    key={`${item.brand}-${item.model}`}
+                    className="flex items-center justify-between text-sm"
+                  >
+                    <span className="text-[var(--foreground)]">
+                      {item.name}
+                    </span>
+                    <span className="text-[var(--muted)]">
+                      {item.brand} {item.model}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
+      </motion.div>
+    </div >
+          </div >
+        </section > 
+        }
 
         {/* CTA Section */}
         <section className="py-24">
@@ -405,7 +405,7 @@ export default function AboutPage() {
             </motion.div>
           </div>
         </section>
-      </main>
+      </main >
 
       <Footer />
     </>

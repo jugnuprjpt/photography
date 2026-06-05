@@ -34,9 +34,11 @@ export default function PortfolioPage() {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
 
+  const portfolioCategories = ["All", "Documentary"];
+
   const filteredProjects = activeCategory === "All"
     ? projects
-    : projects.filter((p) => p.category === activeCategory);
+    : projects.filter((p) => p.category === activeCategory || p.tags?.includes(activeCategory));
 
   const openLightbox = (project: typeof projects[0]) => {
     setSelectedProject(project);
@@ -109,7 +111,7 @@ export default function PortfolioPage() {
         <section className="sticky top-[72px] z-30 bg-[var(--obsidian)]/95 backdrop-blur-sm border-y border-[var(--border)] py-4">
           <div className="container mx-auto px-6">
             <div className="flex flex-wrap justify-center gap-2">
-              {categories.map((category, index) => (
+              {portfolioCategories.map((category, index) => (
                 <motion.button
                   key={category}
                   onClick={() => setActiveCategory(category)}

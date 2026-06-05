@@ -1,6 +1,7 @@
 export { HeroSection } from "./HeroSection";
 export { AboutPreview } from "./AboutPreview";
 export { StatsSection } from "./StatsSection";
+export { ShowreelSection } from "./ShowreelSection";
 export { FeaturedWorks } from "./FeaturedWorks";
 export { TestimonialsSection } from "./TestimonialsSection";
 export { ClientsSection } from "./ClientsSection";

@@ -8,7 +8,7 @@ import { LoadingScreen } from "@/components/ui/LoadingScreen";
 import {
   HeroSection,
   AboutPreview,
-  StatsSection,
+  ShowreelSection,
   FeaturedWorks,
   TestimonialsSection,
   ClientsSection,
@@ -67,7 +67,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <AboutPreview />
-        <StatsSection />
+        <ShowreelSection />
         <FeaturedWorks />
         <TestimonialsSection />
         <ClientsSection />
