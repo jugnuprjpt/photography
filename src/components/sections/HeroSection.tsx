@@ -1,10 +1,10 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowDown, Play } from "lucide-react";
+import { ArrowDown, Play, Pause } from "lucide-react";
 import { Button, GlowButton } from "@/components/ui/Button";
 import { photographer } from "@/data/mockData";
 import gsap from "gsap";
@@ -12,6 +12,19 @@ import gsap from "gsap";
 export function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  const toggleVideo = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -30,12 +43,14 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--obsidian)] via-transparent to-[var(--obsidian)] z-10" />
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--obsidian)] via-transparent to-[var(--obsidian)] z-10 opacity-50" />
-        <Image
-          src="https://images.pexels.com/photos/1739090/pexels-photo-1739090.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="Hero background"
-          fill
-          className="object-cover opacity-40"
-          priority
+        <video
+          ref={videoRef}
+          src="https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-40"
         />
       </div>
 
@@ -196,6 +211,7 @@ export function HeroSection() {
 
       {/* Play video button */}
       <motion.button
+        onClick={toggleVideo}
         className="absolute right-8 bottom-20 md:bottom-32 z-20 w-16 h-16 rounded-full border border-[var(--gold)] flex items-center justify-center group hover:bg-[var(--gold)] transition-all cursor-hover"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -203,7 +219,11 @@ export function HeroSection() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
-        <Play className="w-6 h-6 text-[var(--gold)] group-hover:text-[var(--obsidian)] transition-colors ml-1" />
+        {isPlaying ? (
+          <Pause className="w-6 h-6 text-[var(--gold)] group-hover:text-[var(--obsidian)] transition-colors" />
+        ) : (
+          <Play className="w-6 h-6 text-[var(--gold)] group-hover:text-[var(--obsidian)] transition-colors ml-1" />
+        )}
       </motion.button>
     </section>
   );
