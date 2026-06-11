@@ -89,7 +89,7 @@ export interface Client {
 
 export interface TimelineEvent {
   id: string;
-  year: number;
+  year: number | string;
   title: string;
   description: string;
   type: 'milestone' | 'award' | 'project' | 'education';

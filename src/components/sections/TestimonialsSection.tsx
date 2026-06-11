@@ -133,11 +133,10 @@ export function TestimonialsSection() {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  index === currentIndex
+                className={`w-2 h-2 rounded-full transition-all ${index === currentIndex
                     ? "w-8 bg-[var(--gold)]"
                     : "bg-[var(--glass-border)] hover:bg-[var(--gold)]"
-                }`}
+                  }`}
               />
             ))}
           </div>

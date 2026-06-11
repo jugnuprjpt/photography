@@ -58,15 +58,15 @@ export default function AboutPage() {
         {/* Hero Section */}
         <section
           ref={heroRef.ref}
-          className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-24"
+          className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24"
         >
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-b from-[var(--obsidian)] via-transparent to-[var(--obsidian)] z-10" />
             <Image
-              src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1920"
+              src="/shared image.jfif"
               alt="About hero"
               fill
-              className="object-cover opacity-30"
+              className="object-cover object-[50%_20%] opacity-30"
               priority
             />
           </div>
@@ -139,26 +139,27 @@ export default function AboutPage() {
                 </h2>
                 <div className="prose prose-lg text-[var(--muted)]">
                   <p>
-                    What started as a hobby with a second-hand camera in 2015
-                    has evolved into a lifelong passion for capturing the
-                    essence of human emotion and natural beauty. Every click of
-                    the shutter is an opportunity to tell a story that words
-                    cannot express.
+                    My journey began with a simple passion for photography. Using my mobile phone,
+                    I started capturing moments, experimenting with different angles, compositions,
+                    and creative ideas. What started as a hobby gradually became a strong interest
+                    in visual storytelling.
                   </p>
                   <p>
-                    Over the years, I&apos;ve had the privilege of working with
-                    incredible clients, from couples celebrating their most
-                    important day to fashion brands pushing creative boundaries.
-                    Each project has taught me something new about light,
-                    composition, and the art of storytelling.
+                    As my passion grew, I stepped into the world of mobile filmmaking. I learned how
+                    to create cinematic videos, short films, and engaging content using only a smartphone.
+                    Through this process, I developed skills in camera techniques, framing, lighting,
+                    and storytelling.
                   </p>
                   <p>
-                    My philosophy is simple: photography is not just about
-                    taking pictures. It&apos;s about freezing moments in time,
-                    creating memories that will be cherished for generations.
-                    Whether it&apos;s the authentic joy of a wedding, the raw
-                    beauty of wildlife, or the creative expression of fashion, I
-                    bring the same dedication and artistic vision to every shot.
+                    My interest then expanded into audio-visual production, where I discovered the importance
+                    of combining visuals with sound to create a powerful viewing experience. I learned video
+                    editing, sound design, music synchronization, and color grading to bring my creative ideas to
+                    life.
+                  </p>
+                  <p>
+                    Today, I continue to explore and grow in the fields of photography, mobile filmmaking, and
+                    audio-visual production. Every project is an opportunity to learn, create, and tell meaningful
+                    stories through visual media.
                   </p>
                 </div>
               </motion.div>

@@ -27,10 +27,10 @@ export function AboutPreview() {
             {/* Main image */}
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
               <Image
-                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/shared image.jfif"
                 alt="Shivam Photography"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               {/* Overlay gradient */}

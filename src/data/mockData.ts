@@ -505,37 +505,37 @@ export const clients: Client[] = [
   {
     id: "1",
     name: "Vogue India",
-    logo: "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=200",
+    logo: "https://logo.clearbit.com/vogue.in",
     projectType: "Fashion Editorial",
   },
   {
     id: "2",
     name: "National Geographic",
-    logo: "https://images.pexels.com/photos/162240/tiger-nature-wild-cat-162240.jpeg?auto=compress&cs=tinysrgb&w=200",
+    logo: "https://logo.clearbit.com/nationalgeographic.com",
     projectType: "Wildlife Documentary",
   },
   {
     id: "3",
     name: "Taj Hotels",
-    logo: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=200",
+    logo: "https://logo.clearbit.com/tajhotels.com",
     projectType: "Hospitality",
   },
   {
     id: "4",
     name: "Lonely Planet",
-    logo: "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=200",
+    logo: "https://logo.clearbit.com/lonelyplanet.com",
     projectType: "Travel Photography",
   },
   {
     id: "5",
     name: "Manish Malhotra",
-    logo: "https://images.pexels.com/photos/1536617/pexels-photo-1536617.jpeg?auto=compress&cs=tinysrgb&w=200",
+    logo: "https://logo.clearbit.com/manishmalhotra.in",
     projectType: "Fashion Campaign",
   },
   {
     id: "6",
     name: "Harper's Bazaar",
-    logo: "https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=200",
+    logo: "https://logo.clearbit.com/harpersbazaar.com",
     projectType: "Fashion Editorial",
   },
 ];
@@ -543,83 +543,83 @@ export const clients: Client[] = [
 export const timeline: TimelineEvent[] = [
   {
     id: "1",
-    year: 2015,
-    title: "The Beginning",
+    year: "2021-2022",
+    title: "📸 Photography",
     description:
-      "Started professional photography journey with a second-hand camera and a dream.",
+      "Developed a strong foundation in composition, lighting, and visual storytelling.Learned to capture meaningful moments and express creativity through images.",
     type: "milestone",
   },
   {
     id: "2",
-    year: 2016,
-    title: "First Breakthrough",
+    year: "2022-2023",
+    title: "🎬 Mobile Filmmaking",
     description:
-      "Landed first major wedding client and discovered my passion for capturing human connections.",
-    type: "project",
-  },
-  {
-    id: "3",
-    year: 2017,
-    title: "Editorial Debut",
-    description:
-      "First fashion editorial published in a national magazine, opening doors to commercial projects.",
+      "Expanded from still photography to cinematic video creation using smartphones.Mastered storytelling, camera movements, and video editing techniques.",
     type: "milestone",
   },
   {
-    id: "4",
-    year: 2018,
-    title: "National Geographic Feature",
+    id: "3",
+    year: "2025-2026",
+    title: "🎧 Audio-Visual Production",
     description:
-      "Wildlife series featured in Nat Geo, marking entry into professional wildlife photography.",
-    type: "project",
+      "Integrated visuals, sound, and editing to create impactful media content.Enhanced skills in pre production, production,post-production.",
+    type: "milestone",
   },
-  {
-    id: "5",
-    year: 2019,
-    title: "First Award",
-    description:
-      "Won Portrait Master Award from Professional Photographers of India.",
-    type: "award",
-  },
-  {
-    id: "6",
-    year: 2020,
-    title: "Art Fair Recognition",
-    description:
-      "Selected for Emerging Artist Award at India Art Fair for fine art photography series.",
-    type: "award",
-  },
-  {
-    id: "7",
-    year: 2021,
-    title: "Travel Achievement",
-    description:
-      "Won Lonely Planet Travel Photography Award for documenting Northeast India.",
-    type: "award",
-  },
-  {
-    id: "8",
-    year: 2022,
-    title: "Fashion Excellence",
-    description: "Received Fashion Photography Excellence Award from Femina.",
-    type: "award",
-  },
-  {
-    id: "9",
-    year: 2023,
-    title: "Wildlife Recognition",
-    description:
-      "Honored with Wildlife Photographer of the Year by Sanctuary Asia for tiger conservation series.",
-    type: "award",
-  },
-  {
-    id: "10",
-    year: 2024,
-    title: "Best Wedding Photographer",
-    description:
-      "Won Best Wedding Photographer at Indian Photography Awards, capping a journey of growth.",
-    type: "award",
-  },
+  // {
+  //   id: "4",
+  //   year: 2018,
+  //   title: "National Geographic Feature",
+  //   description:
+  //     "Wildlife series featured in Nat Geo, marking entry into professional wildlife photography.",
+  //   type: "project",
+  // },
+  // {
+  //   id: "5",
+  //   year: 2019,
+  //   title: "First Award",
+  //   description:
+  //     "Won Portrait Master Award from Professional Photographers of India.",
+  //   type: "award",
+  // },
+  // {
+  //   id: "6",
+  //   year: 2020,
+  //   title: "Art Fair Recognition",
+  //   description:
+  //     "Selected for Emerging Artist Award at India Art Fair for fine art photography series.",
+  //   type: "award",
+  // },
+  // {
+  //   id: "7",
+  //   year: 2021,
+  //   title: "Travel Achievement",
+  //   description:
+  //     "Won Lonely Planet Travel Photography Award for documenting Northeast India.",
+  //   type: "award",
+  // },
+  // {
+  //   id: "8",
+  //   year: 2022,
+  //   title: "Fashion Excellence",
+  //   description: "Received Fashion Photography Excellence Award from Femina.",
+  //   type: "award",
+  // },
+  // {
+  //   id: "9",
+  //   year: 2023,
+  //   title: "Wildlife Recognition",
+  //   description:
+  //     "Honored with Wildlife Photographer of the Year by Sanctuary Asia for tiger conservation series.",
+  //   type: "award",
+  // },
+  // {
+  //   id: "10",
+  //   year: 2024,
+  //   title: "Best Wedding Photographer",
+  //   description:
+  //     "Won Best Wedding Photographer at Indian Photography Awards, capping a journey of growth.",
+  //   type: "award",
+  // },
 ];
 
 export const faqs: FAQ[] = [

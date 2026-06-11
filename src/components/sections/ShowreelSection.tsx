@@ -69,9 +69,9 @@ export function ShowreelSection() {
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
             />
           </motion.div>
-          
+
           <div className={`absolute inset-0 bg-[var(--obsidian)]/40 transition-colors duration-500 ${isPlaying ? 'opacity-0 group-hover:opacity-100 group-hover:bg-[var(--obsidian)]/20' : 'opacity-100 group-hover:bg-[var(--obsidian)]/20'}`} />
-          
+
           <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${isPlaying ? 'opacity-0 group-hover:opacity-100' : 'opacity-100'}`}>
             <div className="w-20 h-20 md:w-28 md:h-28 rounded-full border border-white/20 backdrop-blur-sm flex items-center justify-center text-white group-hover:bg-[var(--gold)] group-hover:border-[var(--gold)] group-hover:text-[var(--obsidian)] group-hover:scale-110 transition-all duration-500 shadow-xl">
               {isPlaying ? (

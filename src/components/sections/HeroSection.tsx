@@ -45,12 +45,12 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--obsidian)] via-transparent to-[var(--obsidian)] z-10 opacity-50" />
         <video
           ref={videoRef}
-          src="https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-100 z-0"
         />
       </div>
 
