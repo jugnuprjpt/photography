@@ -50,6 +50,13 @@ export function ClientsSection() {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
+            <Image
+              src="/shared-image.jfif"
+              alt="About hero"
+              fill
+              className="object-cover object-top opacity-30"
+              priority
+            />
             <motion.div 
               animate={{ rotate: 360 }} 
               transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
@@ -70,10 +77,10 @@ export function ClientsSection() {
             <Award className="w-8 h-8 text-[var(--gold)] mb-4" />
             <h3 className="text-xl font-display font-bold mb-6">Trusted By The Best</h3>
             <div className="grid grid-cols-2 gap-x-4 gap-y-8 mt-4">
-              <img src="/shared image.jfif" alt="Vogue" width="90" height="40" className="object-contain filter grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-hover" />
-              <img src="/shared image.jfif" alt="NatGeo" width="90" height="40" className="object-contain filter grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-hover" />
-              <img src="/shared image.jfif" alt="Lonely Planet" width="90" height="40" className="object-contain filter grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-hover" />
-              <img src="/shared image.jfif" alt="Harper" width="90" height="40" className="object-contain filter grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-hover" />
+              <img src="/shared-image.jpg" alt="Vogue" width="90" height="40" className="object-contain filter grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-hover" />
+              <img src="/shared-image.jpg" alt="NatGeo" width="90" height="40" className="object-contain filter grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-hover" />
+              <img src="/shared-image.jpg" alt="Lonely Planet" width="90" height="40" className="object-contain filter grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-hover" />
+              <img src="/shared-image.jpg" alt="Harper" width="90" height="40" className="object-contain filter grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-hover" />
             </div>
           </motion.div>
 
